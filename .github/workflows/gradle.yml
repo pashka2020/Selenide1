@@ -19,7 +19,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Run SUT
-      run: java -jar ./artifacts/app-order.jar &
+      run: java -jar app-card-delivery.jar &
 
     - name: Run tests with Gradle
 
