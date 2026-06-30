@@ -19,8 +19,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Run SUT
-      run: java -jar app-card-delivery.jar &
-
+      run: java -jar ./artifacts/app-card-delivery.jar &
     - name: Run tests with Gradle
 
       run: ./gradlew test --info -Dselenide.headless=true
